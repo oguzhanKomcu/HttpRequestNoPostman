@@ -1,0 +1,18 @@
+
+
+GET https://localhost:7154/Test
+###
+
+
+### Farklý bir apiden de cevap alýnabilinir.
+GET https://catfact.ninja/fact
+
+
+### bU OLMAZSA ÝSTELER AYRILMAZ VE HATA ALINIR
+
+##post içinde vericeðim deðiþkeni burada tanýmlýyorum
+@name=GAMZE
+POST  https://localhost:7154/Test 
+Content-type application/json
+
+"{{name}}" 
